@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BancoDadosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente_Costelaria">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Endereco" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Aniversario" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_pedidoBalcao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="PedidoB" Type="varchar" MaxLength="50" />
+    <Property Name="Valor" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_pedidoEncomenda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="PedidoE" Type="varchar" MaxLength="50" />
+    <Property Name="Valor" Type="int" />
+  </EntityType>
+  <EntityContainer Name="BancoDadosModelStoreContainer">
+    <EntitySet Name="Cliente_Costelaria" EntityType="Self.Cliente_Costelaria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_pedidoBalcao" EntityType="Self.tb_pedidoBalcao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_pedidoEncomenda" EntityType="Self.tb_pedidoEncomenda" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

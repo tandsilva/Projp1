@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BancoDadosModelStoreContainer" CdmEntityContainer="BancoDadosEntities2">
+    <EntitySetMapping Name="Cliente_Costelaria">
+      <EntityTypeMapping TypeName="BancoDadosModel.Cliente_Costelaria">
+        <MappingFragment StoreEntitySet="Cliente_Costelaria">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Aniversario" ColumnName="Aniversario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pedido_Balcao">
+      <EntityTypeMapping TypeName="BancoDadosModel.tb_pedido_Balcao">
+        <MappingFragment StoreEntitySet="tb_pedido_Balcao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="PedidoB" ColumnName="PedidoB" />
+          <ScalarProperty Name="ValorPedidoB" ColumnName="ValorPedidoB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pedidoEncomenda">
+      <EntityTypeMapping TypeName="BancoDadosModel.tb_pedidoEncomenda">
+        <MappingFragment StoreEntitySet="tb_pedidoEncomenda">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="PedidoE" ColumnName="PedidoE" />
+          <ScalarProperty Name="Valor_PedidoE" ColumnName="Valor_PedidoE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_principal">
+      <EntityTypeMapping TypeName="BancoDadosModel.tb_principal">
+        <MappingFragment StoreEntitySet="tb_principal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Aniversario" ColumnName="Aniversario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_reserva">
+      <EntityTypeMapping TypeName="BancoDadosModel.tb_reserva">
+        <MappingFragment StoreEntitySet="tb_reserva">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Qtd_cadeira" ColumnName="Qtd_cadeira" />
+          <ScalarProperty Name="Num_Mesa" ColumnName="Num_Mesa" />
+          <ScalarProperty Name="Horario" ColumnName="Horario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

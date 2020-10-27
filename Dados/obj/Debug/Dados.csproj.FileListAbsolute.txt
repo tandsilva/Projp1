@@ -1,0 +1,2 @@
+C:\Users\gmartinsdos2\source\repos\ProjP1\Dados\obj\Debug\Dados.csprojAssemblyReference.cache
+C:\Users\gmartinsdos2\source\repos\ProjP1\Dados\obj\Debug\Dados.csproj.CoreCompileInputs.cache

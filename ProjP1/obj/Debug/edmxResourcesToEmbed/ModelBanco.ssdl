@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BancoDadosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente_Costelaria">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Endereco" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Aniversario" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_pedido_Balcao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PedidoB" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ValorPedidoB" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_pedidoEncomenda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="PedidoE" Type="varchar" MaxLength="50" />
+    <Property Name="Valor_PedidoE" Type="float" />
+  </EntityType>
+  <EntityType Name="tb_principal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="Telefone" Type="varchar" MaxLength="50" />
+    <Property Name="Endereco" Type="varchar" MaxLength="50" />
+    <Property Name="Aniversario" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_reserva">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Qtd_cadeira" Type="int" />
+    <Property Name="Num_Mesa" Type="int" />
+    <Property Name="Horario" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="BancoDadosModelStoreContainer">
+    <EntitySet Name="Cliente_Costelaria" EntityType="Self.Cliente_Costelaria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_pedido_Balcao" EntityType="Self.tb_pedido_Balcao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_pedidoEncomenda" EntityType="Self.tb_pedidoEncomenda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_principal" EntityType="Self.tb_principal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_reserva" EntityType="Self.tb_reserva" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
